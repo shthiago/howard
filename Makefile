@@ -7,16 +7,21 @@ VERSION = v1
 #     Commands     #
 ####################
 
-clean-build: clean build
+clear-build: docker-clear react-build image-build
 
-clean:
-	@docker rm --force $(IMAGE)
-	@docker rmi --force $(IMAGE):$(VERSION)
+docker-clear:
+	@docker rm --force $(IMAGE) & docker rmi --force $(IMAGE):$(VERSION)
 
-build:
+image-build:
 	@poetry export -f requirements.txt > requirements.txt
 	@docker build --no-cache -t $(IMAGE):$(VERSION) .
 
-run-local:
+run-docker:
 	@docker run -dt --name $(IMAGE) --network host $(IMAGE):$(VERSION)
+
+run-local:
+	@cd src && flask run
+
+react-build:
+	@cd react-app && npm run build
 

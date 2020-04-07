@@ -151,3 +151,5 @@ yarn-error.log*
 /.changelog
 .npm/
 yarn.lock
+
+src/static/react
