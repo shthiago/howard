@@ -1,0 +1,58 @@
+.row_separator {
+    display: table-row;
+    height: 20px;
+    border-bottom: 1px solid black;
+}
+
+.entire_space {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.badges_row {
+    display: table-row;
+    width: 100%;
+}
+
+.badge_space {
+    display: table-cell;
+    width: 50%;
+    position: relative;
+}
+
+.avg_spd_badge {
+    background-color: rgb(0, 21, 41);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    /* Aspect ratio 1:1 */
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+    /* Border */
+    border-radius: 1.5em;
+    box-shadow: 5px 5px #888888;
+}
+
+.text_box {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.text_box h1 {
+    margin-bottom: 0;
+    font-size: 6vw;
+}
+
+.text_box p {
+    margin-bottom: 0;
+    font-size: 1.5vw;
+}
+
+.text_box h1,
+p {
+    color: white
+}

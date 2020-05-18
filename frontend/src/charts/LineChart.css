@@ -1,0 +1,19 @@
+.main_div {
+    background-color: white;
+}
+
+.x_unit_lbl_div {
+    text-align: right;
+    padding-right: 2%;
+    /* background-color: turquoise; */
+}
+
+.y_unit_lbl_div {
+    /* background-color: turquoise; */
+    padding-left: 1%;
+    text-align: left;
+}
+
+.chart_svg {
+    /* background-color: violet; */
+}

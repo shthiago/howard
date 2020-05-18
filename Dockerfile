@@ -1,3 +1,6 @@
+# DEPRECATED
+# NEED REFACTOR
+
 FROM archlinux:20200306
 
 LABEL mantainer="Thiago Sant' Helena <thiago.sant.helena@gmail.com>"
